@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-let counter = 0;
 const SearchParams = () => {
-  counter++;
-  //   const location = "Seattle, WA";
-  const [location, setLocation] = useState("");
+  //   const [location, setLocation] = useState("");
+  const locationHook = useState("");
+  const location = locationHook[0];
+  const setLocation = locationHook[1];
   return (
     <div className="search-params">
-      <h2>{counter}</h2>
       <form>
         <label htmlFor="location">
           Location
