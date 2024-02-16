@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import SearchParams from "./SearchParams";
 import Details from "./Details";
 import AdoptedPetContext from "./AdoptedPetContext";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools/build/lib/devtools";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient({
   defaultOptions: {
