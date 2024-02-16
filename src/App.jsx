@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import SearchParams from "./SearchParams";
 import Details from "./Details";
 import AdoptedPetContext from "./AdoptedPetContext";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools/build/lib/devtools";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/" element={<SearchParams />} />
           </Routes>
         </AdoptedPetContext.Provider>
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </BrowserRouter>
   );
